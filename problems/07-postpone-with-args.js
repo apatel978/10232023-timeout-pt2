@@ -31,7 +31,7 @@ function postponeWithArgs(cb, delay) {
 
 const greet = (person) => console.log('Hello ' + person + '!');
 const slowGreet = postponeWithArgs(greet, 1000);
-slowGreet('Rose'); // prints 0'Hello Rose!' after 100 ms
+slowGreet('Rose'); // prints 'Hello Rose!' after 1000 ms
 slowGreet('Alex'); // prints 'Hello Alex!' after 1000 ms
 
 const printSum = (num1, num2) => console.log(num1 + num2);
